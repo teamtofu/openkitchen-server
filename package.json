@@ -1,0 +1,28 @@
+{
+  "name": "openkitchen-server",
+  "version": "1.0.0",
+  "description": "A server for openkitchen",
+  "main": "index.js",
+  "repository": "https://github.com/teamtofu/openkitchen-server",
+  "author": "Russell Steadman",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.0",
+    "microdata-node": "^1.0.0",
+    "node-fetch": "^2.6.0",
+    "robots-parser": "^2.1.1",
+    "sharp": "^0.22.1",
+    "socket.io": "^2.2.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "build": "docker build . -t russellsteadman/openkitchen",
+    "push": "docker push russellsteadman/openkitchen"
+  }
+}
